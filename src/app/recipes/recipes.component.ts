@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+
 import { Recipe } from './recipe';
 import { RecipeListComponent } from './recipe-list/recipe-list.component';
 import { RecipeDetailComponent } from './recipe-detail/recipe-detail.component';
