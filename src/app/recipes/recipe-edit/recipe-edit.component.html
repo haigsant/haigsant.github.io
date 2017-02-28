@@ -63,7 +63,7 @@
 								  <input type="text" class="form-control" formControlName="amount">
 								</div>
 								<div class="col-sm-2">
-								  <button class="btn btn-danger">X</button>
+								  <button class="btn btn-danger" (click)="onRemoveItem(i)">X</button>
 								</div>
 							</div>
 
@@ -78,5 +78,11 @@
 </div>
 <hr>
 <div class="row">
-	
+	<div class="col-xs-12">
+		<div class="form-group row">
+			<div class="col-sm-5"><input type="text" class="form-control" #itemName></div>
+			<div class="col-sm-5"><input type="text" class="form-control" #itemAmount></div>
+			<div class="col-sm-2"><button type="button" class="btn btn-primary" (click)="onAddItem(itemName.value, itemAmount.value)">+</button></div>
+		</div>
+	</div>
 </div>
